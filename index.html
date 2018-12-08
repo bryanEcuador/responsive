@@ -1,203 +1,216 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, inicial-scale=1.0"/>
+    <meta name="viewport" content="width=device-width, inicial-scale=1.0" />
     <title>Leonidas Esteban</title>
     <link rel="icon" type="image/png" href="images/favicon.png" />
-    <link rel="stylesheet" href="fonts/css/font-awesome.min.css" >
+    <link rel="stylesheet" href="fonts/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/estilos.min.css">
     <link href="https://fonts.googleapis.com/css?family=Fjalla+One|Source+Sans+Pro" rel="stylesheet">
     <!-- <link rel="stylesheet" href="css/estilos.css"> -->
-  </head>
-  <body>
-  <i class="fa fa-bars fa-2x menu-hamburguesa" id="burger-menu" aria-hidden="true"></i>
-    <header class="header">
-      <div class="container">
-        <figure class="logo">
-          <img src="images/logo.png" height="50" alt="Logo de http://leonidasesteban.com" />
-        </figure>
-        <nav class="menu">
-          <ol>
-            <li>
-              <a class="link" id="portafolio-link" href="#portafolio">Portafolio</a>
-            </li>
-            <li>
-              <a class="link" id="eventos-link" href="#eventos">Experiencia</a>
-            </li>
-            <li>
-              <a class="link" id="contacto-link" href="#contacto">Trabajemos juntos</a>
-            </li>
-          </ol>
-        </nav>
-      </div>
-    </header>
-     <section class="hero">
-      <div class="container">
-        <h1>
-          Hola! Soy <strong>Leonidas Esteban</strong> <br/> Desarrollador  <strong>Javascript</strong> con <br> pasión por la <strong>enseñanza</strong>
-        </h1>
-        <img class="hero-image" src="images/hero.jpg" width="500" height="300" alt="imagen principal del sitio"> 
-      </div>
-    </section>  
+    <style>
+        body{font-family:'Source Sans Pro',sans-serif;margin:0}h1,h2,h3,h6{font-family:'Fjalla One',sans-serif;font-weight:normal}h1{font-size:40px;line-height:1.5;letter-spacing:-.2px;color:white;margin:0}h1 strong{color:#026fff}h2{color:#026fff;text-transform:uppercase;font-family:'Source Sans Pro',sans-serif;font-weight:bold;font-size:24px;margin-bottom:40px}.menu-hamburguesa{background-color:rgb(48,48,60,0.4);height:40px;width:40px;color:white;border-radius:50%;text-align:center;line-height:40px;position:absolute;top:4px;left:2px;z-index:4;display:none;position:fixed}.hero{height:300px;background-color:#1b2127;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between}.hero-image{object-fit:cover}.portfolio{background:#fafafa;padding:20px}.project{border:1px solid gray;border-radius:10px;margin-bottom:15px;padding:20px;background:white;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between}.project-course,.project-date,.project-url{margin:10px 0}.project-description{font-size:20px}.project strong{font-family:'Fjalla One',sans-serif}.project-title{font-size:30px;margin-top:0;margin-bottom:10px}.project-details{width:50%}.project-imageContainer{width:50%}.header{background-color:#1b2127;color:white;display:flex;flex-wrap:wrap;height:70px;align-items:center;justify-content:space-between}ol{margin:0;padding:0;list-style:none}figure{margin:0}.header a{color:white;text-decoration:none}.menu{height:inherit}.header ol{display:flex;height:inherit}.header ol li{height:inherit}.header a{display:flex;align-items:center;height:inherit;padding:0 10px}.container{max-width:1000px;flex:1;margin:0 auto;display:inherit;justify-content:inherit;align-items:inherit;height:inherit;flex-wrap:inherit}@media screen and (max-width:1023px){.project-imageContainer img{max-width:100%}.container{padding:0 1em}.hero{height:auto;position:relative;overflow:hidden;padding:2em}.hero-image{position:absolute;z-index:1;left:0;right:0;top:0;bottom:0;width:100%}.hero h1{font-size:2em;position:relative;z-index:2}.portfolio{padding:0}}@media screen and (max-width:767px){.header{display:block;height:auto}.header .logo{text-align:center}.header ol{display:block}.header ol li{height:50px;text-align:center}.header a{justify-content:center;height:40px;font-size:2em;text-decoration:underline;margin-bottom:.5em}.menu-hamburguesa{display:block}.menu{position:fixed;z-index:3;background-color:rgb(5,111,255,0.9);top:0;left:-100vw;width:100vw;display:flex;align-items:center;justify-content:center;bottom:0}.project{display:block}.project-details{width:auto;font-size:16px}.project-imageContainer{width:auto;text-align:center}.project-imageContainer img{max-width:100%}.project-url{font-size:1em}.project-course{font-size:1.2em}.project-date{font-size:1em}.project-description{font-size:.8em}.project-course,.project-date,.project-url{margin:.3em 0}}@media screen and (max-width:480px){.hero h1{font-size:1.5em}.project-details{width:auto;font-size:16px}h2{margin-bottom:5px}}@media screen and (max-width:320px){.hero h1{font-size:1.2em}.project-details{width:auto;font-size:16px}h2{margin-bottom:3px}.hero{padding:2em 1em;background:rgb(0,0,0,0.5)}}
+    </style>
+</head>
 
-     <section id="portafolio" class="portfolio">
-      <div class="container">
-        <h2>Portafolio (Proyectos Destacados)</h2>
-      <article class="project">
-        <div class="project-details">
-          <h3 class="project-title">Platzi Video</h3>
-          <h6 class="project-course">React Native / React</h6>
-          <p class="project-date"><small><strong>Fecha:</strong> 01/07/2018</small></p>
-          <p class="project-url"><small><strong>Puedes verlo en:</strong> www.platzi.com/native</small></p>
-          <p class="project-description">Platzi Video fue el resultado de 3 meses de trabajo
-              para crear la mejor app para enseñar el funcionamiento
-              de React y React Native. Desde crear un vista-detalle, hasta patrones avanzados de nevegación, este proyecto ha sido el ejemplo de futuros creadores de aplicaciones multiplataforma</p>
+<body>
+    <i class="fa fa-bars fa-2x menu-hamburguesa" id="burger-menu" aria-hidden="true"></i>
+    <header class="header">
+        <div class="container">
+            <figure class="logo">
+                <img src="images/logo.png" height="50" alt="Logo de http://leonidasesteban.com" />
+            </figure>
+            <nav class="menu">
+                <ol>
+                    <li>
+                        <a class="link" id="portafolio-link" href="#portafolio">Portafolio</a>
+                    </li>
+                    <li>
+                        <a class="link" id="eventos-link" href="#eventos">Experiencia</a>
+                    </li>
+                    <li>
+                        <a class="link" id="contacto-link" href="#contacto">Trabajemos juntos</a>
+                    </li>
+                </ol>
+            </nav>
         </div>
-        <figure class="project-imageContainer">
-          <img class="project-image" width="500" src="images/platzi-video-react-native.png" alt="prouyecto del curso de React Native">
-        </figure>
-      </article>
-      <article class="project">
-          <div class="project-details">
-            <h3 class="project-title">Platzi Video</h3>
-            <h6 class="project-course">React Native / React</h6>
-            <p class="project-date"><small><strong>Fecha:</strong> 01/07/2018</small></p>
-            <p class="project-url"><small><strong>Puedes verlo en:</strong> www.platzi.com/native</small></p>
-            <p class="project-description">Platzi Video fue el resultado de 3 meses de trabajo
-                para crear la mejor app para enseñar el funcionamiento
-                de React y React Native. Desde crear un vista-detalle, hasta patrones avanzados de nevegación, este proyecto ha sido el ejemplo de futuros creadores de aplicaciones multiplataforma</p>
-          </div>
-          <figure class="project-imageContainer">
-            <img class="project-image" width="500" src="images/platzi-video-react-native.png" alt="prouyecto del curso de React Native">
-          </figure>
-        </article>
-      </div>
-      
+    </header>
+    <section class="hero">
+        <div class="container">
+            <h1>
+                Hola! Soy <strong>Leonidas Esteban</strong> <br /> Desarrollador <strong>Javascript</strong> con <br>
+                pasión por la <strong>enseñanza</strong>
+            </h1>
+            <img class="hero-image" src="images/hero.jpg" width="500" height="300" alt="imagen principal del sitio">
+        </div>
+    </section>
+
+    <section id="portafolio" class="portfolio">
+        <div class="container">
+            <h2>Portafolio (Proyectos Destacados)</h2>
+            <article class="project">
+                <div class="project-details">
+                    <h3 class="project-title">Platzi Video</h3>
+                    <h6 class="project-course">React Native / React</h6>
+                    <p class="project-date"><small><strong>Fecha:</strong> 01/07/2018</small></p>
+                    <p class="project-url"><small><strong>Puedes verlo en:</strong> www.platzi.com/native</small></p>
+                    <p class="project-description">Platzi Video fue el resultado de 3 meses de trabajo
+                        para crear la mejor app para enseñar el funcionamiento
+                        de React y React Native. Desde crear un vista-detalle, hasta patrones avanzados de nevegación,
+                        este proyecto ha sido el ejemplo de futuros creadores de aplicaciones multiplataforma</p>
+                </div>
+                <figure class="project-imageContainer">
+                    <img class="project-image" width="500" src="images/platzi-video-react-native.png" alt="prouyecto del curso de React Native">
+                </figure>
+            </article>
+            <article class="project">
+                <div class="project-details">
+                    <h3 class="project-title">Platzi Video</h3>
+                    <h6 class="project-course">React Native / React</h6>
+                    <p class="project-date"><small><strong>Fecha:</strong> 01/07/2018</small></p>
+                    <p class="project-url"><small><strong>Puedes verlo en:</strong> www.platzi.com/native</small></p>
+                    <p class="project-description">Platzi Video fue el resultado de 3 meses de trabajo
+                        para crear la mejor app para enseñar el funcionamiento
+                        de React y React Native. Desde crear un vista-detalle, hasta patrones avanzados de nevegación,
+                        este proyecto ha sido el ejemplo de futuros creadores de aplicaciones multiplataforma</p>
+                </div>
+                <figure class="project-imageContainer">
+                    <img class="project-image" width="500" src="images/platzi-video-react-native.png" alt="prouyecto del curso de React Native">
+                </figure>
+            </article>
+        </div>
+
     </section>
 
     <div class="container">
-      <h2 class="event-list-title">Más sobre mi experiencia</h2>
+        <h2 class="event-list-title">Más sobre mi experiencia</h2>
     </div>
-    
+
     <section id="eventos" class="event-list">
-      <div class="container">
-        <article class="event">
-          <figure class="event-imageContainer">
-            <img class="event-image" src="images/platzi-conf.jpg" width="500" />
-          </figure>
-          <div class="event-detail">
-            <h3 class="event-title">PlatziConf México 2018</h3>
-            <p class="event-description">El evento más grande sobre gente que quiere aprender más de internet. En esté evento te comparto como tener una vida de constante aprendizaje.</p>
-            <a class="event-url" href="https://www.youtube.com/watch?v=BIS7cWGgJg0" target="_blank">Ver Plática</a>
-          </div>
-        </article>
-        <article class="event">
-          <figure class="event-imageContainer">
-            <img class="event-image" src="images/platzi-conf.jpg" width="500" />
-          </figure>
-          <div class="event-detail">
-            <h3 class="event-title">PlatziConf México 2018</h3>
-            <p class="event-description">El evento más grande sobre gente que quiere aprender más de internet. En esté evento te comparto como tener una vida de constante aprendizaje.</p>
-            <a class="event-url" href="https://www.youtube.com/watch?v=BIS7cWGgJg0" target="_blank">Ver Plática</a>
-          </div>
-        </article>
-        <article class="event">
-          <figure class="event-imageContainer">
-            <img class="event-image" src="images/platzi-conf.jpg" width="500" />
-          </figure>
-          <div class="event-detail">
-            <h3 class="event-title">PlatziConf México 2018</h3>
-            <p class="event-description">El evento más grande sobre gente que quiere aprender más de internet. En esté evento te comparto como tener una vida de constante aprendizaje.</p>
-            <a class="event-url" href="https://www.youtube.com/watch?v=BIS7cWGgJg0" target="_blank">Ver Plática</a>
-          </div>
-        </article>
-        <article class="event">
-          <figure class="event-imageContainer">
-            <img class="event-image" src="images/platzi-conf.jpg" width="500" />
-          </figure>
-          <div class="event-detail">
-            <h3 class="event-title">PlatziConf México 2018</h3>
-            <p class="event-description">El evento más grande sobre gente que quiere aprender más de internet. En esté evento te comparto como tener una vida de constante aprendizaje.</p>
-            <a class="event-url" href="https://www.youtube.com/watch?v=BIS7cWGgJg0" target="_blank">Ver Plática</a>
-          </div>
-        </article>
-      </div>
+        <div class="container">
+            <article class="event">
+                <figure class="event-imageContainer">
+                    <img class="event-image" src="images/platzi-conf.jpg" width="500" />
+                </figure>
+                <div class="event-detail">
+                    <h3 class="event-title">PlatziConf México 2018</h3>
+                    <p class="event-description">El evento más grande sobre gente que quiere aprender más de internet.
+                        En esté evento te comparto como tener una vida de constante aprendizaje.</p>
+                    <a class="event-url" href="https://www.youtube.com/watch?v=BIS7cWGgJg0" target="_blank">Ver Plática</a>
+                </div>
+            </article>
+            <article class="event">
+                <figure class="event-imageContainer">
+                    <img class="event-image" src="images/platzi-conf.jpg" width="500" />
+                </figure>
+                <div class="event-detail">
+                    <h3 class="event-title">PlatziConf México 2018</h3>
+                    <p class="event-description">El evento más grande sobre gente que quiere aprender más de internet.
+                        En esté evento te comparto como tener una vida de constante aprendizaje.</p>
+                    <a class="event-url" href="https://www.youtube.com/watch?v=BIS7cWGgJg0" target="_blank">Ver Plática</a>
+                </div>
+            </article>
+            <article class="event">
+                <figure class="event-imageContainer">
+                    <img class="event-image" src="images/platzi-conf.jpg" width="500" />
+                </figure>
+                <div class="event-detail">
+                    <h3 class="event-title">PlatziConf México 2018</h3>
+                    <p class="event-description">El evento más grande sobre gente que quiere aprender más de internet.
+                        En esté evento te comparto como tener una vida de constante aprendizaje.</p>
+                    <a class="event-url" href="https://www.youtube.com/watch?v=BIS7cWGgJg0" target="_blank">Ver Plática</a>
+                </div>
+            </article>
+            <article class="event">
+                <figure class="event-imageContainer">
+                    <img class="event-image" src="images/platzi-conf.jpg" width="500" />
+                </figure>
+                <div class="event-detail">
+                    <h3 class="event-title">PlatziConf México 2018</h3>
+                    <p class="event-description">El evento más grande sobre gente que quiere aprender más de internet.
+                        En esté evento te comparto como tener una vida de constante aprendizaje.</p>
+                    <a class="event-url" href="https://www.youtube.com/watch?v=BIS7cWGgJg0" target="_blank">Ver Plática</a>
+                </div>
+            </article>
+        </div>
     </section>
-     <section id="contacto" class="contact">
-      <div class="container">
-        <form action="/suscripcion/" class="form-email">
-          <h3>¿Creamos algo juntos?</h3>
-          <input type="text" placeholder="Déjame tu email" id="email">
-          <button>Enviar</button>
-        </form>
-        <div class="social">
-          <a href="https://twitter.com/leonidasesteban" class="social-link twitter"></a>
-          <a href="https://facebook.com/leonidas.esteban" class="social-link facebook"></a>
-          <a href="https://github.com/leonidasesteban" class="social-link github"></a>
-          <a href="https://instagram.com/leonidasesteban" class="social-link instagram"></a>
+    <section id="contacto" class="contact">
+        <div class="container">
+            <form action="/suscripcion/" class="form-email">
+                <h3>¿Creamos algo juntos?</h3>
+                <input type="text" placeholder="Déjame tu email" id="email">
+                <button>Enviar</button>
+            </form>
+            <div class="social">
+                <a href="https://twitter.com/leonidasesteban" class="social-link twitter"></a>
+                <a href="https://facebook.com/leonidas.esteban" class="social-link facebook"></a>
+                <a href="https://github.com/leonidasesteban" class="social-link github"></a>
+                <a href="https://instagram.com/leonidasesteban" class="social-link instagram"></a>
+            </div>
         </div>
-      </div>
-    </section> 
-     <footer class="footer">
-      <div class="container">
-        <div>
-          <p>Curso de Desarrollo web online 2018 <img src="images/platzi.png" width="80" alt="platzi"></p>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <div>
+                <p>Curso de Desarrollo web online 2018 <img src="images/platzi.png" width="80" alt="platzi"></p>
+            </div>
+            <div>
+                <p>
+                    Designed with ❤❤ by <a href="https://twitter.com/thespianartist">@thespianartist</a>
+                </p>
+            </div>
         </div>
-        <div>
-          <p>
-            Designed with ❤❤ by <a href="https://twitter.com/thespianartist">@thespianartist</a>
-          </p>
-        </div>
-      </div>
     </footer>
 
     <script>
 
-      /* window.matchMedia('screen and (max-width: 767px)'); */
-      const ipad = window.matchMedia('screen and (max-width: 767px)');
-     // console.log(ipad);
-      const MENU = document.querySelector('.menu');
-      const burgerButton = document.getElementById('burger-menu');
-      const evento = document.getElementById('eventos-link') ;
-      const contacto = document.getElementById('contacto-link');
-      const portafolio = document.getElementById('portafolio-link');
+        /* window.matchMedia('screen and (max-width: 767px)'); */
+        const ipad = window.matchMedia('screen and (max-width: 767px)');
+        // console.log(ipad);
+        const MENU = document.querySelector('.menu');
+        const burgerButton = document.getElementById('burger-menu');
+        const evento = document.getElementById('eventos-link');
+        const contacto = document.getElementById('contacto-link');
+        const portafolio = document.getElementById('portafolio-link');
 
-      console.log(evento);
+        console.log(evento);
 
-       ipad.addListener(validation);
+        ipad.addListener(validation);
 
-       evento.addEventListener('click',function() {
-          MENU.classList.remove('is-active');
-       })
-
-      contacto.addEventListener('click', function () {
-        MENU.classList.remove('is-active');
-      })
-
-      portafolio.addEventListener('click', function () {
-          MENU.classList.remove('is-active');
-      })
-
-      function validation(event) {
-        console.log("aqui");
-        if(event.matches){
-            burgerButton.addEventListener('click', hideShow);
-        }else {
-            burgerButton.removeEventListener('click', hideShow);
-        }
-      }
-         
-        function hideShow() {
-          if (MENU.classList.contains('is-active')) {
+        evento.addEventListener('click', function () {
             MENU.classList.remove('is-active');
-          } else {
-             MENU.classList.add('is-active');
+        })
 
-          }
+        contacto.addEventListener('click', function () {
+            MENU.classList.remove('is-active');
+        })
+
+        portafolio.addEventListener('click', function () {
+            MENU.classList.remove('is-active');
+        })
+
+        function validation(event) {
+            console.log("aqui");
+            if (event.matches) {
+                burgerButton.addEventListener('click', hideShow);
+            } else {
+                burgerButton.removeEventListener('click', hideShow);
+            }
+        }
+
+        function hideShow() {
+            if (MENU.classList.contains('is-active')) {
+                MENU.classList.remove('is-active');
+            } else {
+                MENU.classList.add('is-active');
+
+            }
         }
 
         validation(ipad);   
     </script>
-  </body>
+</body>
+
 </html>
