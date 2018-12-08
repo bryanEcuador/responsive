@@ -388,6 +388,10 @@ figure {
     position: relative;
     z-index: 2;
   } 
+
+  .portfolio {
+    padding: 0;
+  }
 }
 
 @media screen and (max-width:767px) {
@@ -524,17 +528,18 @@ figure {
   .hero h1 {
     font-size: 1.5em;
   }
-  
-
-  
   .project-details {
       width: auto;
-       font-size: 12px;
+       font-size: 16px;
     }
 
     .event-detail{
       margin: -2em .5em .5em;
       padding:  1em;
+    }
+
+    h2 {
+      margin-bottom: 5px;
     }
 
     .contact {
@@ -568,6 +573,14 @@ figure {
     .hero h1 {
     font-size: 1.2em;
   } 
+  .project-details {
+      width: auto;
+       font-size: 16px;
+    }
+
+    h2 {
+      margin-bottom: 3px;
+    }
 
   .hero {
     padding: 2em 1em;

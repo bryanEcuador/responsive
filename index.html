@@ -20,13 +20,13 @@
         <nav class="menu">
           <ol>
             <li>
-              <a class="link" href="#portafolio">Portafolio</a>
+              <a class="link" id="portafolio-link" href="#portafolio">Portafolio</a>
             </li>
             <li>
-              <a class="link" href="#eventos">Experiencia</a>
+              <a class="link" id="eventos-link" href="#eventos">Experiencia</a>
             </li>
             <li>
-              <a class="link" href="#contacto">Trabajemos juntos</a>
+              <a class="link" id="contacto-link" href="#contacto">Trabajemos juntos</a>
             </li>
           </ol>
         </nav>
@@ -159,8 +159,25 @@
      // console.log(ipad);
       const MENU = document.querySelector('.menu');
       const burgerButton = document.getElementById('burger-menu');
+      const evento = document.getElementById('eventos-link') ;
+      const contacto = document.getElementById('contacto-link');
+      const portafolio = document.getElementById('portafolio-link');
+
+      console.log(evento);
 
        ipad.addListener(validation);
+
+       evento.addEventListener('click',function() {
+          MENU.classList.remove('is-active');
+       })
+
+      contacto.addEventListener('click', function () {
+        MENU.classList.remove('is-active');
+      })
+
+      portafolio.addEventListener('click', function () {
+          MENU.classList.remove('is-active');
+      })
 
       function validation(event) {
         console.log("aqui");
@@ -178,7 +195,9 @@
              MENU.classList.add('is-active');
 
           }
-        }   
+        }
+
+        validation(ipad);   
     </script>
   </body>
 </html>
